@@ -4,54 +4,105 @@
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
     <title>d/ web design & development</title>
 </head>
 
 <body>
 <header>
     <nav>
-        <div class="nav-wrapper nav-header">
-            <a href="#" class="brand-logo"><div id="logo"><div id="logo-d">d<span class="thin">/</span></div><div id="logo-text">web design & <br> development</div></div></a>
-            <a href="#" data-target="mobile-v" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down nav-menu">
-                <li><a href="">home</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">portfolio</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
-                <li class="lang-select"><div class="lang-en">EN</div><div class="lang-active lang-nl">NL</div></li>
-            </ul>
+        <div class="logo-img"><img src="src/img/logo.png" alt="Logo"></div>
+        <div class="nav-menu">
+            <div class="menu-link"><a href="">home</a></div>
+            <div class="menu-link"><a href="">services</a></div>
+            <div class="menu-link"><a href="">portfolio</a></div>
+            <div class="menu-link"><a href="">about</a></div>
+            <div class="menu-link"><a href="">contact</a></div>
+            <div class="menu-link"><a class="lang-active lang-en">EN</a> <a class="lang-nl">NL</a></div>
         </div>
     </nav>
-
-    <ul class="sidenav" id="mobile-v">
-        <li><a href="">home</a></li>
-        <li><a href="">services</a></li>
-        <li><a href="">portfolio</a></li>
-        <li><a href="">about</a></li>
-        <li><a href="">contact</a></li>
-        <li><span class="lang-en">EN</span><span class="lang-active lang-nl">NL</span></li>
-    </ul>
 </header>
 <section class="section-header">
     <div id="splash-text">Personal <br> modern web design</div>
 </section>
-<section></section>
-<section></section>
+<section class="section-services">
+    <div class="services-text">
+        <h1>Services</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit
+            quis saepe? Assumenda blanditiis consequatur, consequuntur dicta dolor ipsa, libero molestiae nihil
+            reiciendis rerum sint tempora tenetur vel! Dolore enim molestiae molestias quia quos. Ab assumenda enim
+            eveniet harum nihil quo sint tempora tempore unde? Autem ipsum laborum magnam nostrum. Beatae debitis,
+            delectus earum error facilis libero minus molestiae natus nisi, odio officiis optio, rem. Autem beatae
+            cumque deleniti deserunt eligendi esse facere illum incidunt inventore laboriosam laborum modi nam, natus,
+            nobis non odio odit quibusdam quisquam repudiandae similique tempora, totam vero voluptatibus. Amet,
+            voluptate.</p>
+    </div>
+    <div class="services-text">
+        <h1>Web design and development</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus atque beatae dignissimos, distinctio
+            dolorem ea eligendi est eum illum iure, iusto perspiciatis, possimus repellendus rerum sapiente tempore
+            voluptate. Accusamus accusantium, at commodi cupiditate deserunt dicta dolore ea eligendi eos eveniet,
+            explicabo facilis ipsa ipsam maiores porro quae qui quisquam ratione reiciendis repellendus reprehenderit
+            saepe, velit! Ad aperiam architecto assumenda blanditiis consectetur delectus dolor dolore earum eligendi
+            eveniet hic laborum molestias nam numquam officiis optio quos ratione reiciendis repellat rerum sed
+            similique, tenetur vero, voluptate voluptatibus? A commodi corporis deserunt distinctio dolores fuga magnam
+            molestiae provident repellendus, sed! Illo, quod.</p>
+    </div>
+    <div class="service-package">
+        <div id="price-indication">
+            <p>€250</p>
+            <p>This is an indication of the price. The final price can differ.</p>
+        </div>
+        <div id="price-determinants">
+            <div class="service-opt">
+                <label class="switch">
+                    <input id="slider1" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <label for="slider1" class="no-select">
+                    Web design & development
+                </label>
+            </div>
+            <div class="service-opt">
+                <label class="switch">
+                    <input id="slider2" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <label for="slider2" class="no-select">
+                    Web hosting & maintenance
+                </label>
+            </div>
+            <div class="service-opt">
+                <label class="switch">
+                    <input id="slider3" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <label for="slider3" class="no-select">
+                    Domain name
+                </label>
+            </div>
+            <div class="service-opt">
+                <label class="switch">
+                    <input id="slider4" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <label for="slider4" class="no-select">
+                    Blog
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+</section>
 <section></section>
 <section></section>
 <footer></footer>
-<script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
