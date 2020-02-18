@@ -4,6 +4,22 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+#scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#scroll-top i {
+    font-size: 2rem;
 }
 
 nav {
@@ -37,6 +53,12 @@ nav {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-link:hover:not(:last-child) {
@@ -46,7 +68,7 @@ nav {
 
 .section-header {
     height: 97vh;
-    background-image: url("../src/img/headerimg.png");
+    background-image: url("../assets/img/headerimg.png");
     background-size: cover;
 }
 
@@ -223,6 +245,7 @@ input:checked + .slider:before {
     flex-direction: column;
     align-items: center;
     color: #fff;
+    padding: 5% 15%;
 }
 
 .section-portfolio h1 {
@@ -230,14 +253,184 @@ input:checked + .slider:before {
     font-weight: 700;
 }
 
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+}
+
 .context {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
 .context img {
-
+    width: 60%;
 }
+
+.flex-left {
+    flex-direction: row;
+}
+
+.flex-left p {
+    margin-left: 2rem;
+}
+
+.flex-right {
+    flex-direction: row-reverse;
+}
+
+.flex-right p {
+    margin-right: 2rem;
+}
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5% 20%;
+    background: #2c2c2c;
+}
+
+.section-about h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#about-intro {
+    margin-top: 4rem;
+}
+
+.pers-info {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.pers-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.pers-text p {
+    margin-top: 1rem;
+}
+
+.pers-img {
+    width: 50%;
+}
+
+.flex-left .pers-text {
+    align-items: flex-end;
+    margin-right: 2rem;
+}
+
+.flex-left .pers-text p {
+    text-align: end;
+}
+
+.flex-right .pers-text {
+    align-items: flex-start;
+    margin-left: 2rem;
+}
+
+.flex-right .pers-img {
+    text-align: end;
+}
+
+.pers-icon {
+    margin-top: 1rem;
+}
+
+.pers-icon i {
+    font-size: 2rem;
+}
+
+.section-contact {
+    background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5% 15%;
+}
+
+.section-contact h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-intro {
+    margin-top: 4rem;
+    width: 60%;
+    text-align: center;
+}
+
+.section-contact form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.section-contact .labels {
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+    align-items: flex-end;
+    margin-right: 1rem;
+}
+
+.section-contact label:nth-of-type(1) {
+    margin-top: .5rem;
+}
+
+.section-contact label {
+    margin-bottom: 1.75rem;
+}
+
+.section-contact .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact input {
+    border-radius: .5rem;
+    border: none;
+    margin-bottom: .8rem;
+    height: 2rem;
+}
+
+.section-contact textarea {
+    border-radius: .5rem;
+    border: none;
+    resize: none;
+}
+
+.contact-submit {
+    margin-top: 1rem;
+    border: none;
+    border-radius: .5rem;
+    height: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #2c2c2c;
+    color: #fff;
+    height: 10vh;
+}
+
 
 @media only screen and (max-device-width : 450px) {
     .nav-menu {

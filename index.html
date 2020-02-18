@@ -5,6 +5,7 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fbf90dc52.js" crossorigin="anonymous"></script>
 
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
@@ -14,23 +15,24 @@
 </head>
 
 <body>
+<a href="#home"><button id="scroll-top"><i class="fas fa-arrow-up"></i></button></a>
 <header>
     <nav>
-        <div class="logo-img"><img src="src/img/logo.png" alt="Logo"></div>
+        <div class="logo-img"><img src="assets/img/logo.png" alt="Logo"></div>
         <div class="nav-menu">
-            <div class="menu-link"><a href="">home</a></div>
-            <div class="menu-link"><a href="">services</a></div>
-            <div class="menu-link"><a href="">portfolio</a></div>
-            <div class="menu-link"><a href="">about</a></div>
-            <div class="menu-link"><a href="">contact</a></div>
+            <div class="menu-link"><a href="#home">home</a></div>
+            <div class="menu-link"><a href="#services">services</a></div>
+            <div class="menu-link"><a href="#portfolio">portfolio</a></div>
+            <div class="menu-link"><a href="#about">about</a></div>
+            <div class="menu-link"><a href="#contact">contact</a></div>
             <div class="menu-link"><a class="lang-active lang-en">EN</a> <a class="lang-nl">NL</a></div>
         </div>
     </nav>
 </header>
-<section class="section-header">
+<section class="section-header" id="home">
     <div id="splash-text">Personal <br> modern web design</div>
 </section>
-<section class="section-services">
+<section class="section-services" id="services">
     <div class="services-text">
         <h1>Services</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit
@@ -98,21 +100,90 @@
         </div>
     </div>
 </section>
-<section class="section-portfolio">
+<section class="section-portfolio" id="portfolio">
     <h1>Portfolio</h1>
     <div class="project">
         <h3>Emelwerda Young Solar Team 2016</h3>
-        <div class="context">
-            <img src="src/img/solarimg.png" alt="Solar Image 2016">
+        <div class="context flex-left">
+            <img src="assets/img/solarimg.png" alt="Solar Image 2016">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
                 necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
-                quibusdam sunt vel?</p>
+                quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
+                mollitia nam,
+                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
+                quibusdam sunt vel</p>
+        </div>
+    </div>
+    <div class="project">
+        <h3>Emelwerda Young Solar Team 2016</h3>
+        <div class="context flex-right">
+            <img src="assets/img/solarimg.png" alt="Solar Image 2016">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
+                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
+                quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
+                mollitia nam,
+                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
+                quibusdam sunt vel</p>
         </div>
     </div>
 </section>
-<section></section>
-<section></section>
-<footer></footer>
+<section class="section-about" id="about">
+    <h1>About</h1>
+    <p id="about-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores, impedit nihil
+        possimus quae
+        temporibus voluptatibus? At dolor, itaque!</p>
+    <div class="pers-info flex-left">
+        <div class="pers-text">
+            <h4>Lukas Hamstra</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
+                rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
+                officia
+                rem.</p>
+            <div class="pers-icon"><i class="fab fa-linkedin"></i></div>
+        </div>
+        <div class="pers-img"><img src="http://via.placeholder.com/300" alt="Lukas Hamstra"></div>
+    </div>
+
+    <div class="pers-info flex-right">
+        <div class="pers-text">
+            <h4>Matthias Lascher</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
+                rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
+                officia
+                rem.</p>
+            <div class="pers-icon"><i class="fab fa-linkedin"></i></div>
+        </div>
+        <div class="pers-img"><img src="http://via.placeholder.com/300" alt="Matthias Lascher"></div>
+    </div>
+</section>
+<section class="section-contact" id="contact">
+    <h1>Contact</h1>
+    <p class="contact-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus
+        expedita iste necessitatibus
+        nostrum odit omnis tenetur vel vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+        beatae delectus expedita iste necessitatibus
+        nostrum odit omnis.</p>
+    <form action="">
+        <div class="labels">
+            <label for="contact_name">Name</label>
+            <label for="contact_email">E-mail</label>
+            <label for="contact_phone">Phone number</label>
+            <label for="contact_subject">Subject</label>
+            <label for="contact_message">Message</label>
+        </div>
+        <div class="inputs">
+            <input type="text" id="contact_name">
+            <input type="text" id="contact_email">
+            <input type="text" id="contact_phone">
+            <input type="text" id="contact_subject">
+            <textarea name="Message" id="contact_message" cols="30" rows="7"></textarea>
+            <button class="contact-submit">Submit</button>
+        </div>
+    </form>
+</section>
+<footer>
+    <p><strong>d</strong>/ web design & development <strong>&copy 2020</strong></p>
+</footer>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
