@@ -66,6 +66,15 @@ nav {
     cursor: pointer;
 }
 
+.section-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 20%;
+    color: #fff;
+}
+
 .section-header {
     height: 97vh;
     background-image: url("../assets/img/headerimg.png");
@@ -107,12 +116,6 @@ nav {
 
 .section-services {
     background: #2c2c2c;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 20%;
 }
 
 .section-services h1 {
@@ -132,6 +135,7 @@ nav {
 
 .services-text h1 {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .services-text p {
@@ -241,10 +245,6 @@ input:checked + .slider:before {
 
 .section-portfolio {
     background: #1d1d1d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
     padding: 5% 15%;
 }
 
@@ -291,11 +291,6 @@ input:checked + .slider:before {
 }
 
 .section-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    padding: 5% 20%;
     background: #2c2c2c;
 }
 
@@ -311,6 +306,10 @@ input:checked + .slider:before {
 .pers-info {
     margin-top: 4rem;
     display: flex;
+}
+
+.pers-name-mobile {
+    display: none;
 }
 
 .pers-text {
@@ -356,10 +355,6 @@ input:checked + .slider:before {
 
 .section-contact {
     background: #1d1d1d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
     padding: 5% 15%;
 }
 
@@ -380,7 +375,7 @@ input:checked + .slider:before {
     margin-top: 3rem;
 }
 
-.section-contact .labels {
+.section-contact .labels-desktop {
     display: flex;
     flex-direction: column;
     line-height: 1em;
@@ -388,11 +383,11 @@ input:checked + .slider:before {
     margin-right: 1rem;
 }
 
-.section-contact label:nth-of-type(1) {
+.labels-desktop label:nth-of-type(1) {
     margin-top: .5rem;
 }
 
-.section-contact label {
+.labels-desktop label {
     margin-bottom: 1.75rem;
 }
 
@@ -433,6 +428,14 @@ footer {
 
 
 @media only screen and (max-device-width : 450px) {
+    * {
+        font-size: 14px;
+    }
+
+    #scroll-top {
+        visibility: hidden;
+    }
+
     .nav-menu {
         display: none;
     }
@@ -440,5 +443,126 @@ footer {
     #splash-text {
         bottom: 50px;
         right: 25px;
+    }
+
+    .section-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 5%;
+        color: #fff;
+    }
+
+    .service-package {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #price-indication {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    #price-indication p:nth-of-type(2) {
+        text-align: center;
+    }
+
+    #price-determinants {
+        width: 100%;
+    }
+
+    .context {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .context img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .context p {
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    #about-intro {
+        margin-top: 2rem;
+    }
+
+    .pers-name-desktop {
+        display: none;
+    }
+
+    .pers-name-mobile {
+        display: inline-block;
+        font-size: 1.5rem;
+        order: 1;
+    }
+
+    .pers-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pers-text {
+        order: 3;
+        width: 80%;
+    }
+
+    .flex-left .pers-text {
+        align-items: flex-start;
+        margin: 2rem 0 0 0;
+    }
+
+    .flex-left .pers-text p {
+        text-align: start;
+        margin: 0;
+    }
+
+    .flex-right .pers-text {
+        align-items: flex-start;
+        margin: 2rem 0 0 0;
+    }
+
+    .flex-right .pers-text p {
+        text-align: start;
+        margin: 0;
+    }
+
+    .pers-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .pers-img img {
+        border-radius: 10px;
+    }
+
+    .contact-intro {
+        width: 100%;
+    }
+
+    .section-contact form {
+        width: 70%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .section-contact .labels-desktop {
+        display: none;
+    }
+
+    .label-mobile {
+        margin-bottom: .5rem;
     }
 }
