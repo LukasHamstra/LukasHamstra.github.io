@@ -391,6 +391,10 @@ input:checked + .slider:before {
     margin-bottom: 1.75rem;
 }
 
+.label-mobile {
+    display: none;
+}
+
 .section-contact .inputs {
     display: flex;
     flex-direction: column;
@@ -564,5 +568,6 @@ footer {
 
     .label-mobile {
         margin-bottom: .5rem;
+        display: inline-block;
     }
 }

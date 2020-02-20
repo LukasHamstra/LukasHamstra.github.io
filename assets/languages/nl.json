@@ -1,0 +1,23 @@
+{
+  "navbar": ["home", "services", "portfolio", "over", "contact"],
+  "splash-text": "Persoonlijk <br> modern web design",
+  "services-title": "Services",
+  "services-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit quis saepe? Assumenda blanditiis consequatur, consequuntur dicta dolor ipsa, libero molestiae nihil reiciendis rerum sint tempora tenetur vel! Dolore enim molestiae molestias quia quos. Ab assumenda enim eveniet harum nihil quo sint tempora tempore unde? Autem ipsum laborum magnam nostrum. Beatae debitis, delectus earum error facilis libero minus molestiae natus nisi, odio officiis optio, rem. Autem beatae cumque deleniti deserunt eligendi esse facere illum incidunt inventore laboriosam laborum modi nam, natus, nobis non odio odit quibusdam quisquam repudiandae similique tempora, totam vero voluptatibus. Amet, voluptate.",
+  "services-title2": "Web design en development",
+  "services-text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus atque beatae dignissimos, distinctio dolorem ea eligendi est eum illum iure, iusto perspiciatis, possimus repellendus rerum sapiente tempore voluptate. Accusamus accusantium, at commodi cupiditate deserunt dicta dolore ea eligendi eos eveniet, explicabo facilis ipsa ipsam maiores porro quae qui quisquam ratione reiciendis repellendus reprehenderit saepe, velit! Ad aperiam architecto assumenda blanditiis consectetur delectus dolor dolore earum eligendi eveniet hic laborum molestias nam numquam officiis optio quos ratione reiciendis repellat rerum sed similique, tenetur vero, voluptate voluptatibus? A commodi corporis deserunt distinctio dolores fuga magnam molestiae provident repellendus, sed! Illo, quod.",
+  "service-price-indication": "Dit is een indicatie van de prijs. De uiteindelijke prijs kan verschillen.",
+  "service-sliders": ["Web design & development", "Web hosting & onderhoud", "Domain naam", "Blog"],
+  "portfolio-title": "Portfolio",
+  "portfolio-project1-title": "Emelwerda Young Solar Challange 2016",
+  "portfolio-project1-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam, necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam, necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus quibusdam sunt vel",
+  "portfolio-project2-title": "Emelwerda Young Solar Challange 2016",
+  "portfolio-project2-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam, necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam, necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus quibusdam sunt vel",
+  "about-title": "Over",
+  "about-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores, impedit nihil possimus quae temporibus voluptatibus? At dolor, itaque!",
+  "about-lukas-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia rem.",
+  "about-matthias-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia rem.",
+  "contact-title": "Contact",
+  "contact-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus expedita iste necessitatibus nostrum odit omnis tenetur vel vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus expedita iste necessitatibus nostrum odit omnis.",
+  "contact-labels": ["Naam", "E-mail", "Tel. number", "Onderwerp", "Bericht"],
+  "contact-button": "Verstuur"
+}
