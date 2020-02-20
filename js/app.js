@@ -1,4 +1,7 @@
 var lang = 'nl';
+// var texts = ["navbar", "splash-text", "services-title", "services-text", "services-title2",
+//                 "services-text2", "service-price-indication", "service-sliders", "portfolio-title",
+//                 "portfolio-project1-title", "portfolio-project1-text", "portfolio"];
 
 $(function(){
     loadText();
@@ -23,13 +26,15 @@ function setLanguage(newLang) {
 }
 
 function loadText() {
-    var url = 'LukasHamstra.github.io/assets/languages/' + lang + '.json';
-    $.getJSON(url, function(data) {
-        console.log(data);
-        $('#nav-home').html(data.navbar[0]);
-        $('#nav-services').html(data.navbar[1]);
-        $('#nav-portfolio').html(data.navbar[2]);
-        $('#nav-about').html(data.navbar[3]);
-        $('#nav-contact').html(data.navbar[4]);
-    });
+    $.ajax({
+        url:  '../assets/languages/' +  lang + '.json',
+        dataType: 'json', async: false,
+        success: function (lang) { data = lang } });
+
+    console.log(data);
+    for (var key in data) {
+        if (data.hasOwnProperty(key)) {
+            $('[data-text=' + key + ']').html(data[key]);
+        }
+    }
 }

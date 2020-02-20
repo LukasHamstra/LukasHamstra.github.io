@@ -7,6 +7,7 @@
             crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6fbf90dc52.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
@@ -21,22 +22,22 @@
     <nav>
         <div class="logo-img"><img src="assets/img/logo.png" alt="Logo"></div>
         <div class="nav-menu">
-            <div class="menu-link"><a href="#home" id="nav-home"></a></div>
-            <div class="menu-link"><a href="#services" id="nav-services"></a></div>
-            <div class="menu-link"><a href="#portfolio" id="nav-portfolio"></a></div>
-            <div class="menu-link"><a href="#about" id="nav-about"></a></div>
-            <div class="menu-link"><a href="#contact" id="nav-contact"></a></div>
-            <div class="menu-link"><a class="lang-active lang-en" href="#" onclick="setLanguage('en')">EN</a> <a class="lang-nl" onclick="setLanguage('en')">NL</a></div>
+            <div class="menu-link"><a href="#home" data-text="nav-home"></a></div>
+            <div class="menu-link"><a href="#services" data-text="nav-services"></a></div>
+            <div class="menu-link"><a href="#portfolio" data-text="nav-portfolio"></a></div>
+            <div class="menu-link"><a href="#about" data-text="nav-about"></a></div>
+            <div class="menu-link"><a href="#contact" data-text="nav-contact"></a></div>
+            <div class="menu-link"><a class="lang-active lang-en" href="#" onclick="setLanguage('en')">EN</a> <a class="lang-nl" onclick="setLanguage('nl')">NL</a></div>
         </div>
     </nav>
 </header>
 <section class="section-main section-header" id="home">
-    <div id="splash-text">Personal <br> modern web design</div>
+    <div data-text="splash-text" id="splash-text">Personal <br> modern web design</div>
 </section>
 <section class="section-main section-services" id="services">
     <div class="services-text">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit
+        <h1 data-text="services-title">Services</h1>
+        <p data-text="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit
             quis saepe? Assumenda blanditiis consequatur, consequuntur dicta dolor ipsa, libero molestiae nihil
             reiciendis rerum sint tempora tenetur vel! Dolore enim molestiae molestias quia quos. Ab assumenda enim
             eveniet harum nihil quo sint tempora tempore unde? Autem ipsum laborum magnam nostrum. Beatae debitis,
@@ -46,8 +47,8 @@
             voluptate.</p>
     </div>
     <div class="services-text">
-        <h1>Web design and development</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus atque beatae dignissimos, distinctio
+        <h1 data-text="services-title2">Web design and development</h1>
+        <p data-text="services-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus atque beatae dignissimos, distinctio
             dolorem ea eligendi est eum illum iure, iusto perspiciatis, possimus repellendus rerum sapiente tempore
             voluptate. Accusamus accusantium, at commodi cupiditate deserunt dicta dolore ea eligendi eos eveniet,
             explicabo facilis ipsa ipsam maiores porro quae qui quisquam ratione reiciendis repellendus reprehenderit
@@ -59,7 +60,7 @@
     <div class="service-package">
         <div id="price-indication">
             <p>€250</p>
-            <p>This is an indication of the price. The final price can differ.</p>
+            <p data-text="service-price-indication">This is an indication of the price. The final price can differ.</p>
         </div>
         <div id="price-determinants">
             <div class="service-opt">
@@ -67,7 +68,7 @@
                     <input id="slider1" type="checkbox">
                     <span class="slider"></span>
                 </label>
-                <label for="slider1" class="no-select">
+                <label for="slider1" class="no-select" data-text="service-slider1">
                     Web design & development
                 </label>
             </div>
@@ -76,7 +77,7 @@
                     <input id="slider2" type="checkbox">
                     <span class="slider"></span>
                 </label>
-                <label for="slider2" class="no-select">
+                <label for="slider2" class="no-select" data-text="service-slider2">
                     Web hosting & maintenance
                 </label>
             </div>
@@ -85,7 +86,7 @@
                     <input id="slider3" type="checkbox">
                     <span class="slider"></span>
                 </label>
-                <label for="slider3" class="no-select">
+                <label for="slider3" class="no-select" data-text="service-slider3">
                     Domain name
                 </label>
             </div>
@@ -94,20 +95,20 @@
                     <input id="slider4" type="checkbox">
                     <span class="slider"></span>
                 </label>
-                <label for="slider4" class="no-select">
+                <label for="slider4" class="no-select" data-text="service-slider4">
                     Blog
                 </label>
             </div>
         </div>
     </div>
 </section>
-<section class="section-main section-portfolio" id="portfolio">
-    <h1>Portfolio</h1>
+<section class="section-main section-portfolio" data-text="portfolio">
+    <h1 id="portfolio-title">Portfolio</h1>
     <div class="project">
-        <h3>Emelwerda Young Solar Team 2016</h3>
+        <h3 data-text="portfolio-project1-title">Emelwerda Young Solar Team 2016</h3>
         <div class="context flex-left">
             <img src="assets/img/solarimg.png" alt="Solar Image 2016">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
+            <p data-text="portfolio-project1-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
                 necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
                 quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
                 mollitia nam,
@@ -116,10 +117,10 @@
         </div>
     </div>
     <div class="project">
-        <h3>Emelwerda Young Solar Team 2016</h3>
+        <h3 data-text="portfolio-project2-title">Emelwerda Young Solar Team 2016</h3>
         <div class="context flex-right">
             <img src="assets/img/solarimg.png" alt="Solar Image 2016">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
+            <p data-text="portfolio-project2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
                 necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
                 quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
                 mollitia nam,
@@ -129,15 +130,15 @@
     </div>
 </section>
 <section class="section-main section-about" id="about">
-    <h1>About</h1>
-    <p id="about-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores, impedit nihil
+    <h1 data-text="about-title">About</h1>
+    <p data-text="about-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores, impedit nihil
         possimus quae
         temporibus voluptatibus? At dolor, itaque!</p>
     <div class="pers-info flex-left">
         <h4 class="pers-name-mobile">Lukas Hamstra</h4>
         <div class="pers-text">
             <h4 class="pers-name-desktop">Lukas Hamstra</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
+            <p data-text="about-lukas-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
                 rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
                 officia
                 rem.</p>
@@ -150,7 +151,7 @@
         <h4 class="pers-name-mobile">Matthias Lascher</h4>
         <div class="pers-text">
             <h4 class="pers-name-desktop">Matthias Lascher</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
+            <p data-text="about-matthias-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
                 rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
                 officia
                 rem.</p>
@@ -160,32 +161,32 @@
     </div>
 </section>
 <section class="section-main section-contact" id="contact">
-    <h1>Contact</h1>
-    <p class="contact-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus
+    <h1 data-text="contact-title">Contact</h1>
+    <p class="contact-intro" data-text="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus
         expedita iste necessitatibus
         nostrum odit omnis tenetur vel vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
         beatae delectus expedita iste necessitatibus
         nostrum odit omnis.</p>
     <form action="">
         <div class="labels-desktop">
-            <label for="contact_name">Name</label>
-            <label for="contact_email">E-mail</label>
-            <label for="contact_phone">Phone number</label>
-            <label for="contact_subject">Subject</label>
-            <label for="contact_message">Message</label>
+            <label for="contact_name" data-text="contact-label-name">Name</label>
+            <label for="contact_email" data-text="contact-label-email">E-mail</label>
+            <label for="contact_phone" data-text="contact-label-phone">Phone number</label>
+            <label for="contact_subject" data-text="contact-label-subject">Subject</label>
+            <label for="contact_message" data-text="contact-label-message">Message</label>
         </div>
         <div class="inputs">
-            <label for="contact_name" class="label-mobile">Name</label>
+            <label for="contact_name" class="label-mobile" data-text="contact-label-name">Name</label>
             <input type="text" id="contact_name">
-            <label for="contact_email" class="label-mobile">Email</label>
+            <label for="contact_email" class="label-mobile" data-text="contact-label-email">Email</label>
             <input type="text" id="contact_email">
-            <label for="contact_phone" class="label-mobile">Phone number</label>
+            <label for="contact_phone" class="label-mobile" data-text="contact-label-phone">Phone number</label>
             <input type="text" id="contact_phone">
-            <label for="contact_subject" class="label-mobile">Subject</label>
+            <label for="contact_subject" class="label-mobile" data-text="contact-label-subject">Subject</label>
             <input type="text" id="contact_subject">
-            <label for="contact_message" class="label-mobile">Message</label>
+            <label for="contact_message" class="label-mobile" data-text="contact-label-message">Message</label>
             <textarea name="Message" id="contact_message" cols="30" rows="7"></textarea>
-            <button class="contact-submit">Submit</button>
+            <button class="contact-submit" data-text="contact-button">Submit</button>
         </div>
     </form>
 </section>
