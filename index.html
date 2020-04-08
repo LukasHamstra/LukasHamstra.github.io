@@ -1,198 +1,40 @@
-<!-- TODO favicon -->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6fbf90dc52.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
-    <title>d/ web design & development</title>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+    <title>Document</title>
 </head>
-
 <body>
-<a href="#home"><button id="scroll-top"><i class="fas fa-arrow-up"></i></button></a>
-<header>
-    <nav>
-        <div class="logo-img"><img src="assets/img/logo.png" alt="Logo"></div>
-        <div class="nav-menu">
-            <div class="menu-link"><a href="#home" data-text="nav-home"></a></div>
-            <div class="menu-link"><a href="#services" data-text="nav-services"></a></div>
-            <div class="menu-link"><a href="#portfolio" data-text="nav-portfolio"></a></div>
-            <div class="menu-link"><a href="#about" data-text="nav-about"></a></div>
-            <div class="menu-link"><a href="#contact" data-text="nav-contact"></a></div>
-            <div class="menu-link"><a class="lang-active lang-en" href="#" onclick="setLanguage('en')">EN</a> <a class="lang-nl" onclick="setLanguage('nl')">NL</a></div>
+<ul uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-    </nav>
-</header>
-<section class="section-main section-header" id="home">
-    <div data-text="splash-text" id="splash-text">Personal <br> modern web design</div>
-</section>
-<section class="section-main section-services" id="services">
-    <div class="services-text">
-        <h1 data-text="services-title">Services</h1>
-        <p data-text="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis eum fugit non nostrum, odit
-            quis saepe? Assumenda blanditiis consequatur, consequuntur dicta dolor ipsa, libero molestiae nihil
-            reiciendis rerum sint tempora tenetur vel! Dolore enim molestiae molestias quia quos. Ab assumenda enim
-            eveniet harum nihil quo sint tempora tempore unde? Autem ipsum laborum magnam nostrum. Beatae debitis,
-            delectus earum error facilis libero minus molestiae natus nisi, odio officiis optio, rem. Autem beatae
-            cumque deleniti deserunt eligendi esse facere illum incidunt inventore laboriosam laborum modi nam, natus,
-            nobis non odio odit quibusdam quisquam repudiandae similique tempora, totam vero voluptatibus. Amet,
-            voluptate.</p>
-    </div>
-    <div class="services-text">
-        <h1 data-text="services-title2">Web design and development</h1>
-        <p data-text="services-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus atque beatae dignissimos, distinctio
-            dolorem ea eligendi est eum illum iure, iusto perspiciatis, possimus repellendus rerum sapiente tempore
-            voluptate. Accusamus accusantium, at commodi cupiditate deserunt dicta dolore ea eligendi eos eveniet,
-            explicabo facilis ipsa ipsam maiores porro quae qui quisquam ratione reiciendis repellendus reprehenderit
-            saepe, velit! Ad aperiam architecto assumenda blanditiis consectetur delectus dolor dolore earum eligendi
-            eveniet hic laborum molestias nam numquam officiis optio quos ratione reiciendis repellat rerum sed
-            similique, tenetur vero, voluptate voluptatibus? A commodi corporis deserunt distinctio dolores fuga magnam
-            molestiae provident repellendus, sed! Illo, quod.</p>
-    </div>
-    <div class="service-package">
-        <div id="price-indication">
-            <p>€250</p>
-            <p data-text="service-price-indication">This is an indication of the price. The final price can differ.</p>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
-        <div id="price-determinants">
-            <div class="service-opt">
-                <label class="switch">
-                    <input id="slider1" type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <label for="slider1" class="no-select" data-text="service-slider1">
-                    Web design & development
-                </label>
-            </div>
-            <div class="service-opt">
-                <label class="switch">
-                    <input id="slider2" type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <label for="slider2" class="no-select" data-text="service-slider2">
-                    Web hosting & maintenance
-                </label>
-            </div>
-            <div class="service-opt">
-                <label class="switch">
-                    <input id="slider3" type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <label for="slider3" class="no-select" data-text="service-slider3">
-                    Domain name
-                </label>
-            </div>
-            <div class="service-opt">
-                <label class="switch">
-                    <input id="slider4" type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <label for="slider4" class="no-select" data-text="service-slider4">
-                    Blog
-                </label>
-            </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
-    </div>
-</section>
-<section class="section-main section-portfolio" data-text="portfolio">
-    <h1 id="portfolio-title">Portfolio</h1>
-    <div class="project">
-        <h3 data-text="portfolio-project1-title">Emelwerda Young Solar Team 2016</h3>
-        <div class="context flex-left">
-            <img src="assets/img/solarimg.png" alt="Solar Image 2016">
-            <p data-text="portfolio-project1-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
-                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
-                quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
-                mollitia nam,
-                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
-                quibusdam sunt vel</p>
-        </div>
-    </div>
-    <div class="project">
-        <h3 data-text="portfolio-project2-title">Emelwerda Young Solar Team 2016</h3>
-        <div class="context flex-right">
-            <img src="assets/img/solarimg.png" alt="Solar Image 2016">
-            <p data-text="portfolio-project2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa mollitia nam,
-                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
-                quibusdam sunt vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus earum ipsa
-                mollitia nam,
-                necessitatibus nisi nobis nostrum. Accusamus aliquam assumenda expedita modi mollitia nam nulla possimus
-                quibusdam sunt vel</p>
-        </div>
-    </div>
-</section>
-<section class="section-main section-about" id="about">
-    <h1 data-text="about-title">About</h1>
-    <p data-text="about-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci asperiores, impedit nihil
-        possimus quae
-        temporibus voluptatibus? At dolor, itaque!</p>
-    <div class="pers-info flex-left">
-        <h4 class="pers-name-mobile">Lukas Hamstra</h4>
-        <div class="pers-text">
-            <h4 class="pers-name-desktop">Lukas Hamstra</h4>
-            <p data-text="about-lukas-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
-                rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
-                officia
-                rem.</p>
-            <div class="pers-icon"><i class="fab fa-linkedin"></i></div>
-        </div>
-        <div class="pers-img"><img src="http://via.placeholder.com/300" alt="Lukas Hamstra"></div>
-    </div>
-
-    <div class="pers-info flex-right">
-        <h4 class="pers-name-mobile">Matthias Lascher</h4>
-        <div class="pers-text">
-            <h4 class="pers-name-desktop">Matthias Lascher</h4>
-            <p data-text="about-matthias-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis officia
-                rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis doloremque dolores nobis
-                officia
-                rem.</p>
-            <div class="pers-icon"><i class="fab fa-linkedin"></i></div>
-        </div>
-        <div class="pers-img"><img src="http://via.placeholder.com/300" alt="Matthias Lascher"></div>
-    </div>
-</section>
-<section class="section-main section-contact" id="contact">
-    <h1 data-text="contact-title">Contact</h1>
-    <p class="contact-intro" data-text="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, beatae delectus
-        expedita iste necessitatibus
-        nostrum odit omnis tenetur vel vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-        beatae delectus expedita iste necessitatibus
-        nostrum odit omnis.</p>
-    <form action="">
-        <div class="labels-desktop">
-            <label for="contact_name" data-text="contact-label-name">Name</label>
-            <label for="contact_email" data-text="contact-label-email">E-mail</label>
-            <label for="contact_phone" data-text="contact-label-phone">Phone number</label>
-            <label for="contact_subject" data-text="contact-label-subject">Subject</label>
-            <label for="contact_message" data-text="contact-label-message">Message</label>
-        </div>
-        <div class="inputs">
-            <label for="contact_name" class="label-mobile" data-text="contact-label-name">Name</label>
-            <input type="text" id="contact_name">
-            <label for="contact_email" class="label-mobile" data-text="contact-label-email">Email</label>
-            <input type="text" id="contact_email">
-            <label for="contact_phone" class="label-mobile" data-text="contact-label-phone">Phone number</label>
-            <input type="text" id="contact_phone">
-            <label for="contact_subject" class="label-mobile" data-text="contact-label-subject">Subject</label>
-            <input type="text" id="contact_subject">
-            <label for="contact_message" class="label-mobile" data-text="contact-label-message">Message</label>
-            <textarea name="Message" id="contact_message" cols="30" rows="7"></textarea>
-            <button class="contact-submit" data-text="contact-button">Submit</button>
-        </div>
-    </form>
-</section>
-<footer>
-    <p><strong>d</strong>/ web design & development <strong>&copy 2020</strong></p>
-</footer>
-<script type="text/javascript" src="js/app.js"></script>
+    </li>
+</ul>
 </body>
 </html>
