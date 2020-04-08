@@ -7,34 +7,94 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"/>
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
 
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Document</title>
 </head>
 <body>
-<ul uk-accordion>
-    <li class="uk-open">
-        <a class="uk-accordion-title" href="#">Item 1</a>
-        <div class="uk-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h1>Space Race</h1>
+<div id="main-content">
+    <div>
+        <h2>Resources</h2>
+        <div>
+            <table class="uk-table">
+                <thead>
+                <tr>
+                    <th>Daily incomes</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Daily spoins:</td>
+                    <td>250</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Upgrade</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Daily research points:</td>
+                    <td>200</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Upgrade</button>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="uk-table">
+                <thead>
+                <tr>
+                    <th>Parts</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Fuel cell</td>
+                    <td>level 1</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Research</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thrusters</td>
+                    <td>level 2</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Research</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cockpit</td>
+                    <td>level 0</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Research</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td>level 1</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Research</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Collection equipment</td>
+                    <td>level 1</td>
+                    <td>
+                        <button class="uk-button uk-button-default" type="button">Research</button>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </li>
-    <li>
-        <a class="uk-accordion-title" href="#">Item 2</a>
-        <div class="uk-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-        </div>
-    </li>
-    <li>
-        <a class="uk-accordion-title" href="#">Item 3</a>
-        <div class="uk-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-        </div>
-    </li>
-</ul>
+    </div>
+    <div>
+        <button class="uk-button uk-button-danger" uk-tooltip="title: You do not have all the needed parts yet; pos: bottom" disabled>LAUNCH</button>
+    </div>
+    <div>
+        <h2>Shop</h2>
+    </div>
+</div>
 </body>
 </html>
