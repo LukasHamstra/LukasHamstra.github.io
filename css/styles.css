@@ -37,3 +37,32 @@ td,th {
 #main-content > div > button {
     margin-left: 40%;
 }
+
+.col3 table {
+    width: 100%;
+}
+
+.col3 table td {
+    width: 33%;
+}
+
+.col3 table td > div {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.shop {
+    margin: 0;
+}
+
+.item-title {
+    font-size: 2em;
+}
+
+.item-spec {
+    font-size: 1em;
+}
+
+.item-price {
+    font-size: 1.5em;
+}

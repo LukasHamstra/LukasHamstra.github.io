@@ -20,7 +20,7 @@
 <body>
 <h1>Space Race</h1>
 <div id="main-content">
-    <div>
+    <div class="col1">
         <h2>Resources</h2>
         <div>
             <table class="uk-table">
@@ -89,11 +89,60 @@
             </table>
         </div>
     </div>
-    <div>
-        <button class="uk-button uk-button-danger" uk-tooltip="title: You do not have all the needed parts yet; pos: bottom" disabled>LAUNCH</button>
+    <div class="col2">
+        <button class="uk-button uk-button-danger"
+                uk-tooltip="title: You do not have all the needed parts yet; pos: bottom" disabled>LAUNCH
+        </button>
     </div>
-    <div>
+    <div class="col3">
         <h2>Shop</h2>
+        <div>
+            <table class="uk-class">
+                <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <p class="shop item-title">Fuel Cell</p>
+                            <p class="shop item-spec uk-label">level 1</p>
+                            <p class="shop item-price">400 spoins</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div><p class="shop item-title">Research points</p>
+                            <p class="shop item-spec uk-label">2500</p>
+                            <p class="shop item-price">400 spoins</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div><p class="shop item-title">Body</p>
+                            <p class="shop item-spec uk-label">level 1</p>
+                            <p class="shop item-price">400 spoins</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><p class="shop item-title">Thrusters</p>
+                            <p class="shop item-spec uk-label">level 2</p>
+                            <p class="shop item-price">800 spoins</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div><p class="shop item-title">Fuel Cell</p>
+                            <p class="shop item-spec uk-label">level 2</p>
+                            <p class="shop item-price">800 spoins</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div><p class="shop item-title">Research points</p>
+                            <p class="shop item-spec uk-label">1000</p>
+                            <p class="shop item-price">200 spoins</p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 </body>
