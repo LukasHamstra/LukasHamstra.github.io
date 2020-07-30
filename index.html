@@ -5,145 +5,36 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"/>
-
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Space Race</h1>
-<div id="main-content">
-    <div class="col1">
-        <h2>Resources</h2>
-        <div>
-            <table class="uk-table">
-                <thead>
-                <tr>
-                    <th>Daily incomes</th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>Daily spoins:</td>
-                    <td>250</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Upgrade</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Daily research points:</td>
-                    <td>200</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Upgrade</button>
-                    </td>
-                </tr>
-            </table>
+    <div class="info-banner" hidden>Due to the newness of this framework for me there might be a small change that the framework will change later</div>
 
-            <table class="uk-table">
-                <thead>
-                <tr>
-                    <th>Parts</th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>Fuel cell</td>
-                    <td>level 1</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Research</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thrusters</td>
-                    <td>level 2</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Research</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cockpit</td>
-                    <td>level 0</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Research</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Body</td>
-                    <td>level 1</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Research</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Collection equipment</td>
-                    <td>level 1</td>
-                    <td>
-                        <button class="uk-button uk-button-default" type="button">Research</button>
-                    </td>
-                </tr>
-            </table>
+    <header></header>
+    <div class="head">
+        <div class="cta pure-u-1-3">
+            <p id="cta-text">Bij d/ ontwerpen en ontwikkelen we mooie en gebruiksvriendelijke websites. We hopen samen met u tot een professionele, moderne en unieke website te komen.</p>
+            <button id="cta-button">Bekijke de mogelijkheden</button>
         </div>
     </div>
-    <div class="col2">
-        <button class="uk-button uk-button-danger"
-                uk-tooltip="title: You do not have all the needed parts yet; pos: bottom" disabled>LAUNCH
-        </button>
-    </div>
-    <div class="col3">
-        <h2>Shop</h2>
-        <div>
-            <table class="uk-class">
-                <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="shop item-title">Fuel Cell</p>
-                            <p class="shop item-spec uk-label">level 1</p>
-                            <p class="shop item-price">400 spoins</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div><p class="shop item-title">Research points</p>
-                            <p class="shop item-spec uk-label">2500</p>
-                            <p class="shop item-price">400 spoins</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div><p class="shop item-title">Body</p>
-                            <p class="shop item-spec uk-label">level 1</p>
-                            <p class="shop item-price">400 spoins</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div><p class="shop item-title">Thrusters</p>
-                            <p class="shop item-spec uk-label">level 2</p>
-                            <p class="shop item-price">800 spoins</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div><p class="shop item-title">Fuel Cell</p>
-                            <p class="shop item-spec uk-label">level 2</p>
-                            <p class="shop item-price">800 spoins</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div><p class="shop item-title">Research points</p>
-                            <p class="shop item-spec uk-label">1000</p>
-                            <p class="shop item-price">200 spoins</p>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+    <div class="services">
+        <div class="service pure-u-1-3">
+            <h2 id="service-title">Diensten</h2>
+            <p id="service-text">D/ biedt een totaalpakket aan: van de tekentafel tot de webserver en zelfs nog verder. <br>Tijdens het ontwerpproces bieden wij u volop de mogelijkheid om mee te denken en om feedback te geven. Wanneer u enthousiast bent over het ontwerp gaan wij aan de slag om de website te realiseren. Na het ontwerpen en ontwikkelen zijn er extra mogelijkheden voor onderhoud, hosting en technische ondersteuning voor uw website.</p>
+        </div>
+        <div class="possibilities pure-u-1-3">
+            <h2>Mogelijkheden</h2>
+            <p>Wij willen u graag helpen met een website die voldoet aan al uw wensen. Hiervoor bieden wij verschillende diensten aan.</p>
         </div>
     </div>
-</div>
+    <div class="portfolio"></div>
+    <div class="about"></div>
+    <div class="contact"></div>
+    <footer></footer>
 </body>
 </html>

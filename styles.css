@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 3px 4px rgba(0,0,0,0.16);
+    color: #7C7C7C;
+}
+
+/* HEAD */
+.info-banner {
+    background-color: #4789A8;
+    text-align: center;
+    color: #fff;
+}
+
+.head {
+    background: url("images/header.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 315px;
+    margin-top: 517px;
+}
+
+#cta-text {
+    color: #fff;
+    text-align: right;
+    font-weight: 500;
+}
+
+#cta-button {
+    margin-top: 40px;
+    padding: 18px 29px;
+    color: #fff;
+    font-weight: 700;
+    background: none;
+    border: 4px solid #fff;
+    border-radius: .8em;
+}
+
+/* SERVICES */
+.services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+#service-title {
+    text-align: right;
+}
+
+#service-text {
+    text-align: right;
+}
+
+.possibilities {
+    margin-top: 80px;
+    margin-left: 50px;
+}
