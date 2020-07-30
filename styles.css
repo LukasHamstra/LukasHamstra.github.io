@@ -85,9 +85,27 @@ h2 {
     align-items: center;
 }
 
+.portfolio-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.portfolio-cards div {
+    flex: 0 0 auto;
+}
+
 .portfolio-card {
     box-shadow: 0 3px 20px rgba(0,0,0,0.16);
     border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 75px;
 }
 
 .portfolio-card img {
@@ -96,12 +114,17 @@ h2 {
 }
 
 .card-title {
+    color: #7C7C7C;
+    text-shadow: 0 3px 4px rgba(0,0,0,0.16);
     font-size: 30px;
     font-weight: 700;
+    margin-top: 40px;
 }
 
 .card-text {
     font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 #card-1 {
