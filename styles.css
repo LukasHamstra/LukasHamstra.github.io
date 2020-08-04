@@ -148,3 +148,49 @@ nav span i {
     transform: rotate(90deg);
     transition: transform .2s linear;
 }
+
+.portfolio {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio h3 {
+    font-weight: 600;
+    font-size: 27px;
+    text-shadow: 0 3px 4px rgba(0,0,0,0.16);
+    color: #5C5C5C;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 315px;
+    height: 430px;
+}
+
+.card img {
+    height: 165px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.about {
+    margin-top: 88px;
+}
+
+.about h3 {
+    font-weight: 600;
+    font-size: 27px;
+    text-shadow: 0 3px 4px rgba(0,0,0,0.16);
+    color: #5C5C5C;
+    margin-bottom: 25px;
+}
