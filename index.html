@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+<!--    <link rel="stylesheet" href="stylesDesktop.css">-->
+    <link rel="stylesheet" href="stylesMobile.css">
 
     <script src="https://kit.fontawesome.com/6fbf90dc52.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,9 +20,32 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar fixed-top">
         <img src="" alt="Logo">
         <span id="nav-button"><i class="fas fa-bars"></i></span>
+        <ul class="d-inline-block-lg">
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">diensten</a>
+            </li>
+            <li>
+                <a href="#">mogelijkheden</a>
+            </li>
+            <li>
+                <a href="#">portfolio</a>
+            </li>
+            <li>
+                <a href="#">over</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#"><span style="font-weight: 400">EN</span> NL</a>
+            </li>
+        </ul>
     </nav>
 
     <div id="nav-open" style="display: none">
@@ -32,6 +56,7 @@
             <li>portfolio</li>
             <li>over</li>
             <li>contact</li>
+            <li><span style="font-weight: 700">NL</span><span>EN</span></li>
         </ul>
     </div>
 
@@ -55,29 +80,37 @@
             <h3>Mogelijkheden</h3>
             <p>Wij willen u graag helpen met een website die voldoet aan al uw wensen. Hiervoor bieden wij verschillende diensten aan:</p>
             <div class="possibilities-collapse">
-                <i class="fas fa-caret-right" id="DesignDevelopmentCaret"></i><a id="DesignDevelopment" data-toggle="collapse" href="#collapseDesignDevelopment">
+                <div class="collapse-item">
+                    <i class="fas fa-caret-right" id="DesignDevelopmentCaret"></i><a id="DesignDevelopment" data-toggle="collapse" href="#collapseDesignDevelopment">
                     Web design & development
                 </a><br>
-                <div class="collapse" id="collapseDesignDevelopment">
-                    <p>Wij creëren een prachtig ontwerp voor u en zetten deze om in een website.</p>
+                    <div class="collapse" id="collapseDesignDevelopment">
+                        <p>Wij creëren een prachtig ontwerp voor u en zetten deze om in een website.</p>
+                    </div>
                 </div>
-                <i class="fas fa-caret-right" id="HostingDomeinCaret"></i><a id="HostingDomein" data-toggle="collapse" data-target="#collapseHostingDomein">
+                <div class="collapse-item">
+                    <i class="fas fa-caret-right" id="HostingDomeinCaret"></i><a id="HostingDomein" data-toggle="collapse" data-target="#collapseHostingDomein">
                     Webhosting & domein
                 </a><br>
-                <div class="collapse" id="collapseHostingDomein">
-                    <p>Wij nemen u het technische ‘gedoe’ uit handen en zorgen ervoor dat uw website bereikbaar is en blijft!</p>
+                    <div class="collapse" id="collapseHostingDomein">
+                        <p>Wij nemen u het technische ‘gedoe’ uit handen en zorgen ervoor dat uw website bereikbaar is en blijft!</p>
+                    </div>
                 </div>
-                <i class="fas fa-caret-right" id="OnderhoudCaret"></i><a id="Onderhoud" data-toggle="collapse" href="#collapseOnderhoud">
+                <div class="collapse-item">
+                    <i class="fas fa-caret-right" id="OnderhoudCaret"></i><a id="Onderhoud" data-toggle="collapse" href="#collapseOnderhoud">
                     Onderhoud
                 </a><br>
-                <div class="collapse" id="collapseOnderhoud">
-                    <p>Zijn er gaandeweg nog aanpassingen nodig? Wij helpen u hier graag bij.</p>
+                    <div class="collapse" id="collapseOnderhoud">
+                        <p>Zijn er gaandeweg nog aanpassingen nodig? Wij helpen u hier graag bij.</p>
+                    </div>
                 </div>
-                <i class="fas fa-caret-right" id="BlogCaret"></i><a id="Blog" data-toggle="collapse" data-target="#collapseBlog">
+                <div class="collapse-item">
+                    <i class="fas fa-caret-right" id="BlogCaret"></i><a id="Blog" data-toggle="collapse" data-target="#collapseBlog">
                     Blog
                 </a><br>
-                <div class="collapse" id="collapseBlog">
-                    <p>Bent u van plan om periodiek berichten op de website te plaatsen? Dan is het mogelijk om hiervoor een back-end systeem op de website te integreren.</p>
+                    <div class="collapse" id="collapseBlog">
+                        <p>Bent u van plan om periodiek berichten op de website te plaatsen? Dan is het mogelijk om hiervoor een back-end systeem op de website te integreren.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,47 +118,96 @@
 
     <div class="portfolio">
         <h3>Portfolio</h3>
-        <div id="carouselControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active card">
-                    <img class="card-img-top" src="images/Home_resized.jpg" alt="Emelwerda Young Solar Site">
-                    <div class="card-body">
-                        <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
-                        <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams geracet.
-                            Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
-                    </div>
-                </div>
-                <div class="carousel-item card">
-                    <img class="card-img-top" src="images/Home_resized.jpg" alt="Emelwerda Young Solar Site">
-                    <div class="card-body">
-                        <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
-                        <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams geracet.
-                            Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
-                    </div>
-                </div>
-                <div class="carousel-item card">
-                    <img class="card-img-top" src="images/Home_resized.jpg" alt="Emelwerda Young Solar Site">
-                    <div class="card-body">
-                        <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
-                        <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams geracet.
-                            Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
-                    </div>
+        <div class="portfolio-items">
+            <div class="portfolio-item active card">
+                <img class="card-img-top" src="images/Home_mobile.jpg" alt="Emelwerda Young Solar Site">
+                <div class="card-body">
+                    <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
+                    <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams
+                        geracet.
+                        Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="portfolio-item card">
+                <img class="card-img-top" src="images/Home_mobile.jpg" alt="Emelwerda Young Solar Site">
+                <div class="card-body">
+                    <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
+                    <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams
+                        geracet.
+                        Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
+                </div>
+            </div>
+            <div class="portfolio-item card">
+                <img class="card-img-top" src="images/Home_mobile.jpg" alt="Emelwerda Young Solar Site">
+                <div class="card-body">
+                    <h5 class="card-title">Emelwerda Young Solar Team 2016</h5>
+                    <p class="card-text">In 2016 hebben wij met een team meegedaan aan de Young Solar Challenge. Hiervoor hebben wij een zonneboot gebouwd en hiermee tegen andere teams
+                        geracet.
+                        Bovendien hebben wij samen een website gemaakt voor ons team zodat wij aan sponsors en geïnteresseerden makkelijk konden laten zien waar wij mee bezig waren.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="about">
         <h3>Over</h3>
+        <div class="lukas">
+            <div class="about-image">
+                <img src="images/Home_mobile.jpg" alt="">
+                <span><i class="fab fa-linkedin"></i></span>
+            </div>
+            <div class="about-text">
+                <h3>Lukas Hamstra</h3>
+                <p>Ik ben een Software Development student aan de HAN. Ik zit al lange tijd in de programmeer wereld en ik heb al veel geleerd. Door voor d/ aan websites te werken wil ik mijn
+                    kennis
+                    toepassen om zo mooie producten te creëren. Ik vind het belangrijk dat onze websites <strong>gebruiksvriendelijk</strong> en <strong>modern</strong> zijn, en natuurlijk ook dat
+                    de klant enthousiast wordt van zijn
+                    nieuwe showpiece!</p>
+            </div>
+        </div>
+        <div class="matthias">
+            <div class="about-image">
+                <img src="images/Home_mobile.jpg" alt="">
+                <span><i class="fab fa-linkedin"></i></span>
+            </div>
+            <div class="about-text">
+                <h3>Matthias Lascher</h3>
+                <p>In het dagelijks leven studeer ik Industrieel Product Ontwerpen en ben ik veel bezig met ontwerptrends die spelen. Met d/ pas ik de kennis van vormgeving en
+                    gebruiksvriendelijkheid
+                    toe op het ontwerpen van websites. Het is mijn visie om websites te ontwerpen die er <strong>mooi</strong> en <strong>professioneel</strong> uitzien, maar ook gemakkelijk te
+                    gebruiken zijn en informatie op een
+                    <strong>overzichtelijke</strong> en <strong>behapbare</strong> manier weergeven.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="contact">
+        <h3>Contact</h3>
+        <p>Neem vrijblijvend contact met ons op om te informeren naar de mogelijkheden die voor u interessant zijn. Maatwerk is uiteraard mogelijk!</p>
+        <form>
+            <div class="form-group">
+                <label for="nameInput" class="col-lg-4 ">Naam</label>
+                <input type="text" class="form-control col-lg-8" id="nameInput">
+            </div>
+            <div class="form-group">
+                <label for="mailInput" class="col-lg-4">E-mailadres</label>
+                <input type="email" class="form-control col-lg-8" id="mailInput">
+            </div>
+            <div class="form-group">
+                <label for="telInput" class="opt-input col-lg-4">Telefoonnummer<em>Optioneel</em></label>
+                <input type="tel" class="form-control col-lg-8" id="telInput">
+            </div>
+            <div class="form-group text-area-input">
+                <label for="msgInput" class="col-lg-4">Bericht</label>
+                <textarea id="msgInput" cols="30" rows="3" class="form-control col-lg-8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Verstuur</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>comp_name &copy <strong>2020</strong></p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
