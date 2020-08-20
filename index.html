@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,8 +21,13 @@
 <body>
 
     <nav class="navbar fixed-top">
-        <img src="" alt="Logo">
-        <span id="nav-button"><i class="fas fa-bars"></i></span>
+        <img src="" alt="Luma Webdesign">
+<!--        <span id="nav-button"><i class="fas fa-bars"></i></span>-->
+        <button class="hamburger hamburger--slider" type="button" id="nav-button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <ul class="d-inline-block-lg">
             <li>
                 <a href="#">home</a>

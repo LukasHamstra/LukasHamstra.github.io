@@ -4,16 +4,17 @@ $(document).ready(function(){
     var onderhoud = false;
     var blog = false;
     var openNav = $("#nav-open");
-    var windowWidth = $(window).width();
-    var negativeNavWidth = "-".concat(windowWidth).concat("px");
 
     console.log(openNav.css('right'));
 
     $("#nav-button").click(function() {
+        $("#nav-button").toggleClass("is-active");
+        const windowWidth = $(window).width() * 2;
+        const negativeNavWidth = "-".concat(windowWidth.toString()).concat("px");
         if(openNav.css('right') === negativeNavWidth) {
             openNav.css('right', '0');
         } else if (openNav.css('right') === "0px") {
-            openNav.css('right', '-100vw');
+            openNav.css('right', '-200vw');
         }
     });
     $("#DesignDevelopment").click(function() {

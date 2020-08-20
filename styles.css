@@ -48,7 +48,7 @@ nav ul {
 
 #nav-open {
     position: fixed;
-    right: -100vw;
+    right: -200vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ nav ul {
     background-color: #4789A8;
     z-index: 999;
     overflow: hidden;
-    transition: 0.5s;
+    transition: .75s;
     width: 100%;
 }
 
