@@ -1,24 +1,37 @@
-$(document).ready(function(){
+$(document).ready(function () {
     var designDevelopment = false;
     var hostingDomein = false;
     var onderhoud = false;
     var blog = false;
     var openNav = $("#nav-open");
+    var buttonNav = $("#nav-button");
 
-    console.log(openNav.css('right'));
+    buttonNav.click(function (e) {
+        navClick();
+        e.stopPropagation();
+    });
 
-    $("#nav-button").click(function() {
-        $("#nav-button").toggleClass("is-active");
+    openNav.get(0).addEventListener('transitionend', function (event) {
+        buttonNav.bind("click", function (e) {
+            navClick();
+            e.stopPropagation()
+        });
+    }, false);
+
+    function navClick() {
+        buttonNav.unbind("click");
+        buttonNav.toggleClass("is-active");
         const windowWidth = $(window).width() * 2;
         const negativeNavWidth = "-".concat(windowWidth.toString()).concat("px");
-        if(openNav.css('right') === negativeNavWidth) {
+        if (openNav.css('right') === negativeNavWidth) {
             openNav.css('right', '0');
         } else if (openNav.css('right') === "0px") {
             openNav.css('right', '-200vw');
         }
-    });
-    $("#DesignDevelopment").click(function() {
-        if(designDevelopment) {
+    }
+
+    $("#DesignDevelopment").click(function () {
+        if (designDevelopment) {
             $("#DesignDevelopmentCaret").removeClass('caret-open');
         } else {
             $("#DesignDevelopmentCaret").addClass('caret-open');
@@ -26,8 +39,9 @@ $(document).ready(function(){
 
         designDevelopment = !designDevelopment;
     });
-    $("#HostingDomein").click(function() {
-        if(hostingDomein) {
+
+    $("#HostingDomein").click(function () {
+        if (hostingDomein) {
             $("#HostingDomeinCaret").removeClass('caret-open');
         } else {
             $("#HostingDomeinCaret").addClass('caret-open');
@@ -35,8 +49,9 @@ $(document).ready(function(){
 
         hostingDomein = !hostingDomein;
     });
-    $("#Onderhoud").click(function() {
-        if(onderhoud) {
+
+    $("#Onderhoud").click(function () {
+        if (onderhoud) {
             $("#OnderhoudCaret").removeClass('caret-open');
         } else {
             $("#OnderhoudCaret").addClass('caret-open');
@@ -44,8 +59,9 @@ $(document).ready(function(){
 
         onderhoud = !onderhoud;
     });
-    $("#Blog").click(function() {
-        if(blog) {
+
+    $("#Blog").click(function () {
+        if (blog) {
             $("#BlogCaret").removeClass('caret-open');
         } else {
             $("#BlogCaret").addClass('caret-open');
@@ -58,9 +74,9 @@ $(document).ready(function(){
     let i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             let content = this.nextElementSibling;
-            if (content.style.maxHeight){
+            if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
