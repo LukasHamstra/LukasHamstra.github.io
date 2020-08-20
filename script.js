@@ -5,8 +5,27 @@ $(document).ready(function () {
     let blog = false;
     const openNav = $("#nav-open");
     const buttonNav = $("#nav-button");
+    let navChangeHeight = $(window).height() - (($(window).height()) * 0.2);
+    console.log((($(window).height()) * 0.2));
+    console.log(navChangeHeight);
+
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > navChangeHeight) {
+            $(".navbar").addClass("alternate-nav");
+            $(".hamburger-inner").addClass("alternate-hamburger");
+        } else {
+            $(".navbar").removeClass("alternate-nav");
+            $(".hamburger-inner").removeClass("alternate-hamburger");
+        }
+    });
 
     buttonNav.click(function (e) {
+        navClick();
+        e.stopPropagation();
+    });
+
+    $(".mobileNavLink").click(function (e) {
         navClick();
         e.stopPropagation();
     });
@@ -25,8 +44,14 @@ $(document).ready(function () {
         const negativeNavWidth = "-".concat(windowWidth.toString()).concat("px");
         if (openNav.css('right') === negativeNavWidth) {
             openNav.css('right', '0');
+            $(".navbar").removeClass("alternate-nav");
+            $(".hamburger-inner").removeClass("alternate-hamburger");
         } else if (openNav.css('right') === "0px") {
             openNav.css('right', '-200vw');
+            if ($(window).scrollTop() > navChangeHeight) {
+                $(".navbar").addClass("alternate-nav");
+                $(".hamburger-inner").addClass("alternate-hamburger");
+            }
         }
     }
 
