@@ -5,6 +5,11 @@
     font-size: 16px;
     font-weight: 400;
     color: #7C7C7C;
+    scroll-behavior: smooth;
+}
+
+button:focus {
+    outline: none;
 }
 
 .divider {
@@ -28,6 +33,11 @@ nav {
     justify-content: space-between;
     position: absolute;
     background: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 .fixed-top {
@@ -435,7 +445,8 @@ footer strong {
     nav ul {
         display: inline-block;
         margin-top: 30px;
-        width: 90%;
+        width: 80%;
+        text-align: right;
     }
 
     ul li {
@@ -683,6 +694,7 @@ footer strong {
     .about-image {
         display: flex;
         justify-content: center;
+        width: 35%;
     }
 
     .about-image img {
