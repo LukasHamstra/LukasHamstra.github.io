@@ -3,9 +3,18 @@ $(document).ready(function(){
     var hostingDomein = false;
     var onderhoud = false;
     var blog = false;
+    var openNav = $("#nav-open");
+    var windowWidth = $(window).width();
+    var negativeNavWidth = "-".concat(windowWidth).concat("px");
+
+    console.log(openNav.css('right'));
 
     $("#nav-button").click(function() {
-        $("#nav-open").toggle();
+        if(openNav.css('right') === negativeNavWidth) {
+            openNav.css('right', '0');
+        } else if (openNav.css('right') === "0px") {
+            openNav.css('right', '-100vw');
+        }
     });
     $("#DesignDevelopment").click(function() {
         if(designDevelopment) {
@@ -49,7 +58,6 @@ $(document).ready(function(){
 
     for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-            // this.classList.toggle("active");
             let content = this.nextElementSibling;
             if (content.style.maxHeight){
                 content.style.maxHeight = null;
