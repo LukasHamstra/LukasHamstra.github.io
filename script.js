@@ -1,17 +1,17 @@
 $(document).ready(function () {
-    var designDevelopment = false;
-    var hostingDomein = false;
-    var onderhoud = false;
-    var blog = false;
-    var openNav = $("#nav-open");
-    var buttonNav = $("#nav-button");
+    let designDevelopment = false;
+    let hostingDomein = false;
+    let onderhoud = false;
+    let blog = false;
+    const openNav = $("#nav-open");
+    const buttonNav = $("#nav-button");
 
     buttonNav.click(function (e) {
         navClick();
         e.stopPropagation();
     });
 
-    openNav.get(0).addEventListener('transitionend', function (event) {
+    openNav.get(0).addEventListener('transitionend', function () {
         buttonNav.bind("click", function (e) {
             navClick();
             e.stopPropagation()

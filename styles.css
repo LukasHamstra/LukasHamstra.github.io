@@ -46,6 +46,10 @@ nav ul {
     display: none;
 }
 
+#nav-button {
+    outline: none;
+}
+
 #nav-open {
     position: fixed;
     right: -200vw;
