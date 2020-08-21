@@ -13,19 +13,26 @@ button:focus {
 }
 
 .divider {
-    position: absolute;
+    position: relative;
     z-index: -101;
     width: 100%;
-    stroke-width: 10;
 }
 
 #divider-1 {
     z-index: 101;
-    top: 577px;
+    top: 2px;
+}
+
+#divider-2 {
+    top: 5px;
 }
 
 #divider-3 {
-    margin-top: -90px;
+    margin-top: -22%;
+}
+
+#divider-5 {
+    position: absolute;
 }
 
 nav {
@@ -131,12 +138,12 @@ nav ul {
 }
 
 .cta {
-    width: 240px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-right: 44px;
-    margin-bottom: 105px;
+    margin-bottom: 2rem;
 }
 
 #cta-text {
@@ -174,14 +181,14 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 295px
+    width: 80%;
 }
 
 .possibilities-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 295px;
+    width: 80%;
     margin-top: 50px;
 }
 
@@ -257,7 +264,7 @@ nav ul {
 }
 
 .portfolio {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,7 +311,7 @@ nav ul {
 }
 
 .about {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,7 +382,7 @@ nav ul {
 }
 
 .contact {
-    margin: 80px 40px 40px;
+    margin: 30px 40px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -451,7 +458,32 @@ footer strong {
     font-weight: 700;
 }
 
-@media only screen and (min-width: 1700px) {
+/*Above 1500px*/
+@media only screen and (min-width: 1500px) {
+
+    nav ul {
+        display: inline-block;
+        margin-top: 30px;
+        width: 80%;
+        text-align: right;
+    }
+
+    ul li a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 27px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    }
+
+    ul li a span {
+        color: #fff;
+        font-size: 27px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    }
+}
+
+/*Above 1000px*/
+@media only screen and (min-width: 1000px) {
     nav {
         margin: 23px 7% 0 7%;
     }
@@ -462,9 +494,9 @@ footer strong {
 
     nav ul {
         display: inline-block;
-        margin-top: 30px;
         width: 80%;
         text-align: right;
+        margin: 0;
     }
 
     ul li {
@@ -479,13 +511,13 @@ footer strong {
     ul li a {
         color: #fff;
         font-weight: 700;
-        font-size: 27px;
+        font-size: 20px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
     }
 
     ul li a span {
         color: #fff;
-        font-size: 27px;
+        font-size: 20px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
     }
 
@@ -520,64 +552,9 @@ footer strong {
         width: 70%;
         margin-top: 20px;
     }
-}
-
-@media only screen and (min-width: 540px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 27px;
-        font-weight: 400;
-        color: #7C7C7C;
-    }
-
-    .divider {
-        position: absolute;
-        z-index: -101;
-    }
-
-    #divider-1 {
-        top: 721px;
-    }
-
-    #divider-3 {
-        margin-top: -440px;
-    }
-
-    .home {
-        height: 90vh;
-        background: url("images/Home_desktop.jpg") bottom;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
 
     .cta {
-        width: 540px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 315px;
-        margin-bottom: 247px;
-    }
-
-    #cta-text {
-        font-weight: 500;
-        text-align: right;
-        margin-bottom: 24px;
-        color: #fff;
-    }
-
-    #cta-button {
-        padding: 10px 11px;
-        background: none;
-        border: 4px solid #fff;
-        border-radius: 10px;
-        color: #fff;
-        font-weight: 700;
+        width: 40% !important;
     }
 
     .services {
@@ -585,33 +562,32 @@ footer strong {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        margin-top: 122px;
     }
 
     .services h3 {
-        font-size: 48px;
+        font-size: 36px;
         font-weight: 600;
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.13);
-        margin-bottom: 60px
+        margin-bottom: 1em;
     }
 
     .services-text {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-right: 50px;
+        margin-right: 2.5%;
         text-align: right;
-        width: 605px;
-        margin-left: 278px;
+        width: 40%;
+        margin-left: 7.5%;
     }
 
     .possibilities-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 50px;
-        width: 660px;
-        margin-right: 277px;
+        margin-left: 2.5%;
+        width: 40%;
+        margin-right: 7.5%;
         margin-top: 0;
     }
 
@@ -636,18 +612,18 @@ footer strong {
     }
 
     .whitespace {
-        height: 30px;
+        height: 10px;
         background-color: #fff;
     }
 
     .content-text {
         background-color: #F7F7F7;
         border-radius: 15px;
-        padding: 28px 36px;
+        padding: 20px 28px;
     }
 
     .content-text p {
-        font-size: 22px;
+        font-size: 14px;
         font-weight: 400;
         margin: 0;
     }
@@ -665,39 +641,205 @@ footer strong {
         transition: transform .2s linear;
     }
 
+    .contact p {
+        width: 50%;
+    }
+
+    .contact form {
+        width: 40%;
+    }
+}
+
+/*Above 615px*/
+@media only screen and (min-width: 615px) {
+    .home {
+        background: url("images/Home_desktop.jpg") bottom;
+        background-size: cover;
+    }
+
+    .cta {
+        width: 60%;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        margin-top: 2%;
+    }
+
+    .about-image img {
+        border-radius: 100%;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.29);
+    }
+
+    .about-image span i {
+        position: relative;
+        font-size: 24px;
+        left: 45px;
+        top: 90px;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    .lukas {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .matthias {
+        display: flex;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    footer {
+        bottom: -8rem;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+/*Above 1200px*/
+@media only screen and (min-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 27px;
+        font-weight: 400;
+        color: #7C7C7C;
+    }
+
+    .navbar ul {
+        display: flex;
+        width: 60%;
+        justify-content: flex-end;
+        margin: 0 5% 0 0;
+    }
+
+    .divider {
+        position: relative;
+        z-index: -101;
+    }
+
+    #divider-1 {
+        top: 2px;
+    }
+
+    #divider-2 {
+        top: -75px;
+    }
+
+    #divider-3 {
+        margin-top: -350px;
+    }
+
+    .home {
+        height: 90vh;
+        background: url("images/Home_desktop.jpg") bottom;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .cta {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 10%;
+    }
+
+    #cta-text {
+        font-weight: 500;
+        text-align: right;
+        margin-bottom: 24px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    #cta-button {
+        padding: 10px 11px;
+        background: none;
+        border: 4px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .services-text p, .services-text strong, .services-text em {
+        font-size: 20px;
+    }
+
+    .possibilities-text p {
+        font-size: 20px;
+    }
+
+    .collapse-item a {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content-text {
+        padding: 30px 26px;
+    }
+
+    .collapse-item {
+        margin-bottom: .8em;
+    }
+
     .portfolio {
-        margin-top: 355px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
 
     .portfolio h3 {
-        font-weight: 600;
-        font-size: 48px;
-        text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.13);
-        color: #5C5C5C;
-        margin-bottom: 75px;
+        font-size: 36px;
+        margin-bottom: 1.5em;
     }
 
     #carouselControls {
-        width: 786px;
-        height: 708px;
+        width: 50%;
     }
 
     .carousel {
-        width: 786px;
-        height: 708px;
+        width: 50%;
     }
 
     .carousel-inner {
-        width: 786px;
-        height: 708px;
+        width: 100%;
+        height: 100%;
     }
 
     .card {
-        width: 786px;
-        height: 708px;
+        width: 100%;
+        height: 100%;
         /*border: none;*/
         /*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);*/
         /*border-radius: 10px;*/
@@ -710,17 +852,16 @@ footer strong {
     }
 
     .card-title {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 700;
     }
 
     .card-text {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
     }
 
     .about {
-        margin-top: 270px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -728,7 +869,7 @@ footer strong {
 
     .about h3 {
         font-weight: 600;
-        font-size: 48px;
+        font-size: 36px;
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.13);
         color: #5C5C5C;
         margin-bottom: 78px;
@@ -741,24 +882,22 @@ footer strong {
     }
 
     .about-image img {
-        height: 315px;
-        width: 315px;
+        height: 200px;
+        width: 200px;
         border-radius: 100%;
         box-shadow: 0 3px 4px rgba(0, 0, 0, 0.29);
-        margin-right: 100px;
     }
 
     .about-image span i {
         position: relative;
         font-size: 48px;
-        left: 70px;
-        top: 269px;
+        left: 75px;
+        top: 155px;
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.16);
     }
 
     .lukas {
         display: flex;
-        margin-bottom: 73px;
     }
 
     .matthias {
@@ -773,27 +912,30 @@ footer strong {
     }
 
     .about-text h3 {
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 500;
         margin-bottom: 36px;
     }
 
     .about-text p {
-        font-size: 27px;
+        font-size: 20px;
         font-weight: 400;
     }
 
+    .about-text strong {
+        font-size: 20px;
+    }
+
     .contact {
-        margin-top: 325px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 75px;
+        margin-bottom: 0;
     }
 
     .contact h3 {
         font-weight: 600;
-        font-size: 48px;
+        font-size: 36px;
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.13);
         color: #5C5C5C;
         margin-bottom: 60px;
@@ -801,15 +943,16 @@ footer strong {
 
     .contact p {
         text-align: left;
-        font-size: 27px;
+        font-size: 20px;
         font-weight: 400;
-        margin-bottom: 75px;
-        width: 643px;
+        width: 65%;
     }
 
     form {
-        width: 1000px;
-        margin-right: 350px;
+        width: 70% !important;
+        margin-left: 8%;
+        margin-right: 22%;
+        margin-top: 2%;
     }
 
     .form-control {
@@ -818,15 +961,20 @@ footer strong {
 
     .form-group {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     .form-group label {
         text-align: right;
         margin-right: 46px;
-        font-size: 29px;
+        font-size: 20px;
         font-weight: 700;
+        width: 25%;
+    }
+
+    .form-group label em {
+        font-size: 20px;
     }
 
     .opt-input {
@@ -840,12 +988,14 @@ footer strong {
     .contact input {
         border: none;
         box-shadow: 0 1px 7px rgba(0, 0, 0, 0.17);
+        width: 75%;
     }
 
     .contact textarea {
         border: none;
         box-shadow: 0 1px 7px rgba(0, 0, 0, 0.17);
         margin-bottom: 25px;
+        width: 75%;
     }
 
     .text-area-input {
@@ -864,15 +1014,20 @@ footer strong {
         font-size: 27px;
         font-weight: 700;
         color: #6C6C6C;
-        margin-left: 35%;
+        margin-left: 29.5%;
+    }
+
+    #divider-5 {
+        position: relative;
+        top: 75px;
     }
 
     footer {
-        margin-top: 265px;
         margin-left: 40%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        bottom: 0;
     }
 
     footer p {
