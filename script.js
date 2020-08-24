@@ -6,9 +6,6 @@ $(document).ready(function () {
     const openNav = $("#nav-open");
     const buttonNav = $("#nav-button");
     let navChangeHeight = $(window).height() - (($(window).height()) * 0.2);
-    console.log((($(window).height()) * 0.2));
-    console.log(navChangeHeight);
-
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > navChangeHeight) {

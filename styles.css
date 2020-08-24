@@ -44,7 +44,6 @@ nav {
 
 a:visited {
     color: #fff;
-    text-decoration: none;
 }
 
 .fixed-top {
@@ -63,12 +62,16 @@ nav ul {
     display: none;
 }
 
+a {
+    color: #fff;
+}
+
 .alternate-nav {
     color: #7C7C7C;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     background-color: #fff;
     top: 0;
-    height: 10%;
+    padding: 2% 2%;
 }
 
 .alternate-hamburger, .alternate-hamburger::before, .alternate-hamburger::after {
@@ -212,6 +215,8 @@ nav ul {
     margin-bottom: 10px;
     width: 100%;
     height: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .collapse-item:last-of-type {
@@ -398,9 +403,10 @@ nav ul {
 
 .contact p {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
+    width: 60%;
 }
 
 .contact label {
@@ -479,6 +485,20 @@ footer strong {
         color: #fff;
         font-size: 27px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    }
+
+    .btn-submit {
+        margin-left: 28% !important;
+    }
+
+    .services-text {
+        width: 30% !important;
+        margin-left: 20% !important;
+    }
+
+    .possibilities-text {
+        width: 25% !important;
+        margin-right: 20% !important;
     }
 }
 
@@ -643,6 +663,7 @@ footer strong {
 
     .contact p {
         width: 50%;
+        font-size: 16px;
     }
 
     .contact form {
@@ -655,6 +676,10 @@ footer strong {
     .home {
         background: url("images/Home_desktop.jpg") bottom;
         background-size: cover;
+    }
+
+    #nav-open ul li a {
+        font-size: 20px;
     }
 
     .cta {
@@ -783,6 +808,9 @@ footer strong {
         background: none;
         border: 4px solid #fff;
         border-radius: 10px;
+    }
+
+    #cta-button a {
         color: #fff;
         font-weight: 700;
         font-size: 20px;
@@ -945,11 +973,11 @@ footer strong {
         text-align: left;
         font-size: 20px;
         font-weight: 400;
-        width: 65%;
+        width: 34%;
     }
 
     form {
-        width: 70% !important;
+        width: 50% !important;
         margin-left: 8%;
         margin-right: 22%;
         margin-top: 2%;
