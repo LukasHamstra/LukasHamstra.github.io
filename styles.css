@@ -71,7 +71,7 @@ a {
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     background-color: #fff;
     top: 0;
-    padding: 2% 2%;
+    padding: 3% 2%;
 }
 
 .alternate-hamburger, .alternate-hamburger::before, .alternate-hamburger::after {
@@ -212,7 +212,7 @@ a {
 }
 
 .collapse-item {
-    margin-bottom: 10px;
+    margin-bottom: .9em;
     width: 100%;
     height: 20px;
     cursor: pointer;
@@ -230,7 +230,7 @@ a {
 }
 
 .collapse-item a i {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .content {
@@ -246,7 +246,7 @@ a {
 
 .content-text {
     background-color: #F7F7F7;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 13px;
 }
 
@@ -263,7 +263,7 @@ a {
     text-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
 }
 
-.caret-open {
+.caret-open a i {
     transform: rotate(90deg);
     transition: transform .2s linear;
 }
@@ -504,77 +504,13 @@ footer strong {
 
 /*Above 1000px*/
 @media only screen and (min-width: 1000px) {
-    nav {
-        margin: 23px 7% 0 7%;
-    }
-
-    #nav-button {
-        display: none;
-    }
-
-    nav ul {
-        display: inline-block;
-        width: 80%;
-        text-align: right;
-        margin: 0;
-    }
-
-    ul li {
-        display: inline-block;
-        margin-right: 6%;
-    }
-
-    ul li:last-of-type {
-        margin-right: 0;
-    }
-
-    ul li a {
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-    }
-
-    ul li a span {
-        color: #fff;
-        font-size: 20px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-    }
-
-    .fixed-top {
-        top: 0;
-        width: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .alternate-nav {
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .alternate-nav ul li a {
-        color: #7C7C7C;
-    }
-
-    .alternate-nav ul li a span {
-        color: #7C7C7C;
-    }
-
-    .alternate-nav img {
-        margin-left: 5%;
-    }
-
-    .alternate-nav ul {
-        margin-right: 5%;
-        width: 70%;
-        margin-top: 20px;
-    }
 
     .cta {
         width: 40% !important;
+    }
+
+    .alternate-nav {
+        padding: 1% 2%;
     }
 
     .services {
@@ -612,7 +548,7 @@ footer strong {
     }
 
     .collapse-item {
-        margin-bottom: 20px;
+        margin-bottom: .9em;
     }
 
     .collapse-item a {
@@ -638,7 +574,7 @@ footer strong {
 
     .content-text {
         background-color: #F7F7F7;
-        border-radius: 15px;
+        border-radius: 10px;
         padding: 20px 28px;
     }
 
@@ -656,7 +592,7 @@ footer strong {
         margin-right: 30px;
     }
 
-    .caret-open {
+    .caret-open a i {
         transform: rotate(90deg);
         transition: transform .2s linear;
     }
@@ -680,6 +616,10 @@ footer strong {
 
     #nav-open ul li a {
         font-size: 20px;
+    }
+
+    .alternate-nav {
+        padding: 2% 2%;
     }
 
     .cta {
@@ -744,6 +684,79 @@ footer strong {
 
 /*Above 1200px*/
 @media only screen and (min-width: 1200px) {
+
+
+    nav {
+        margin: 23px 7% 0 7%;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
+    nav ul {
+        display: inline-block;
+        width: 80%;
+        text-align: right;
+        margin: 0;
+    }
+
+    ul li {
+        display: table;
+        margin-right: 6%;
+    }
+
+    ul li:last-of-type {
+        margin-right: 0;
+    }
+
+    ul li a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    ul li a span {
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    }
+
+    .fixed-top {
+        top: 0;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .alternate-nav {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .alternate-nav ul li a {
+        color: #7C7C7C;
+    }
+
+    .alternate-nav ul li a span {
+        color: #7C7C7C;
+    }
+
+    .alternate-nav img {
+        margin-left: 5%;
+    }
+
+    .alternate-nav ul {
+        margin-right: 5%;
+        width: 70%;
+        margin-top: 20px;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -837,7 +850,7 @@ footer strong {
     }
 
     .collapse-item {
-        margin-bottom: .8em;
+        margin-bottom: .9em;
     }
 
     .portfolio {
