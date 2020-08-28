@@ -1,19 +1,15 @@
 $(document).ready(function () {
-    let designDevelopment = false;
-    let hostingDomein = false;
-    let onderhoud = false;
-    let blog = false;
     const openNav = $("#nav-open");
     const buttonNav = $("#nav-button");
     let navChangeHeight = $(window).height() - (($(window).height()) * 0.2);
 
-    if($(window).scrollTop() > navChangeHeight) {
+    if($(window).scrollTop() > navChangeHeight && openNav.css('right') !== "0px") {
         $(".navbar").addClass("alternate-nav");
         $(".hamburger-inner").addClass("alternate-hamburger");
     }
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > navChangeHeight) {
+        if ($(window).scrollTop() > navChangeHeight && openNav.css('right') !== "0px") {
             $(".navbar").addClass("alternate-nav");
             $(".hamburger-inner").addClass("alternate-hamburger");
         } else {
@@ -56,46 +52,6 @@ $(document).ready(function () {
             }
         }
     }
-
-    // $("#DesignDevelopment").click(function () {
-    //     if (designDevelopment) {
-    //         $("#DesignDevelopmentCaret").removeClass('caret-open');
-    //     } else {
-    //         $("#DesignDevelopmentCaret").addClass('caret-open');
-    //     }
-    //
-    //     designDevelopment = !designDevelopment;
-    // });
-    //
-    // $("#HostingDomein").click(function () {
-    //     if (hostingDomein) {
-    //         $("#HostingDomeinCaret").removeClass('caret-open');
-    //     } else {
-    //         $("#HostingDomeinCaret").addClass('caret-open');
-    //     }
-    //
-    //     hostingDomein = !hostingDomein;
-    // });
-    //
-    // $("#Onderhoud").click(function () {
-    //     if (onderhoud) {
-    //         $("#OnderhoudCaret").removeClass('caret-open');
-    //     } else {
-    //         $("#OnderhoudCaret").addClass('caret-open');
-    //     }
-    //
-    //     onderhoud = !onderhoud;
-    // });
-    //
-    // $("#Blog").click(function () {
-    //     if (blog) {
-    //         $("#BlogCaret").removeClass('caret-open');
-    //     } else {
-    //         $("#BlogCaret").addClass('caret-open');
-    //     }
-    //
-    //     blog = !blog;
-    // });
 
     let coll = document.getElementsByClassName("collapsible");
 

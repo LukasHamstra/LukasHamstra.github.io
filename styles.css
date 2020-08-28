@@ -444,7 +444,6 @@ a {
     font-size: 13px;
     font-weight: 700;
     color: #6C6C6C;
-    margin-left: 10px;
 }
 
 footer {
@@ -685,6 +684,9 @@ footer strong {
 /*Above 1200px*/
 @media only screen and (min-width: 1200px) {
 
+    #nav-open {
+        display: none;
+    }
 
     nav {
         margin: 23px 7% 0 7%;
@@ -986,11 +988,12 @@ footer strong {
         text-align: left;
         font-size: 20px;
         font-weight: 400;
-        width: 34%;
+        width: 42%;
+        margin-left: 4%;
     }
 
     form {
-        width: 50% !important;
+        width: 60% !important;
         margin-left: 8%;
         margin-right: 22%;
         margin-top: 2%;
@@ -1055,7 +1058,7 @@ footer strong {
         font-size: 27px;
         font-weight: 700;
         color: #6C6C6C;
-        margin-left: 29.5%;
+        margin-left: 31%;
     }
 
     #divider-5 {
