@@ -8,6 +8,15 @@
     scroll-behavior: smooth;
 }
 
+#logo {
+    width: 55%;
+}
+
+.alternate-nav img {
+    content: url("images/Logo/Logo_Full.svg");
+    width: 18% !important;
+}
+
 button:focus {
     outline: none;
 }
@@ -65,6 +74,10 @@ nav ul {
 
 a {
     color: #fff;
+}
+
+#nav-open ul li a {
+    font-size: 21px;
 }
 
 .alternate-nav {
@@ -402,12 +415,16 @@ a {
     margin-bottom: 20px;
 }
 
+form {
+    width: 90%;
+}
+
 .contact p {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
-    width: 60%;
+    width: 100%;
 }
 
 .contact label {
@@ -504,6 +521,10 @@ footer strong {
 
 /*Above 1000px*/
 @media only screen and (min-width: 1000px) {
+
+    #logo {
+        width: 33%;
+    }
 
     .cta {
         width: 40% !important;
@@ -603,7 +624,13 @@ footer strong {
     }
 
     .contact form {
-        width: 40%;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #logo {
+        width: 37%;
     }
 }
 
@@ -614,12 +641,32 @@ footer strong {
         background-size: cover;
     }
 
+    #divider-1 {
+        content: url("images/svg/Shape-1.svg");
+    }
+
+    #divider-2 {
+        content: url("images/svg/Shape-2.svg");
+    }
+
+    #divider-3 {
+        content: url("images/svg/Shape-3.svg");
+    }
+
+    #divider-4 {
+        content: url("images/svg/Shape-4.svg");
+    }
+
+    #logo {
+        width: 45%;
+    }
+
     #nav-open ul li a {
         font-size: 20px;
     }
 
     .alternate-nav {
-        padding: 2% 2%;
+        padding: 1.5% 2%;
     }
 
     .cta {
@@ -673,6 +720,14 @@ footer strong {
         font-weight: 400;
     }
 
+    .contact p {
+        width: 60%;
+    }
+
+    form {
+        width: 60%;
+    }
+
     footer {
         bottom: -8rem;
     }
@@ -684,6 +739,10 @@ footer strong {
 
 /*Above 1200px*/
 @media only screen and (min-width: 1200px) {
+
+    #logo {
+        width: 20%;
+    }
 
     #nav-open {
         display: none;
@@ -751,7 +810,7 @@ footer strong {
     }
 
     .alternate-nav img {
-        margin-left: 5%;
+        margin-left: 6%;
     }
 
     .alternate-nav ul {
@@ -1076,7 +1135,7 @@ footer strong {
     }
 
     footer p {
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 300;
     }
 

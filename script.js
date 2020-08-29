@@ -1,7 +1,47 @@
 $(document).ready(function () {
     const openNav = $("#nav-open");
     const buttonNav = $("#nav-button");
-    let navChangeHeight = $(window).height() - (($(window).height()) * 0.2);
+    let navChangeHeight = $(window).height() - (($(window).height()) * 0.3);
+
+    let serviceDiv = document.getElementById("services").offsetTop - convertRemToPixels(5);
+    let possibilitiesDiv = document.getElementById("possibilities").offsetTop - convertRemToPixels(5);
+    let portfolioDiv = document.getElementById("portfolio").offsetTop - convertRemToPixels(5);
+    let aboutDiv = document.getElementById("about").offsetTop - convertRemToPixels(5);
+    let contactDiv = document.getElementById("contact").offsetTop - convertRemToPixels(6.5);
+
+    function convertRemToPixels(rem) {
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+
+    $("#serviceLink, #serviceLinkMobile").click(function() {
+        setTimeout(function () {
+            scrollTo(0, serviceDiv);
+        }, 10);
+    });
+
+    $("#possibilitiesLinkMobile, #possibilitiesLinkMobile").click(function() {
+        setTimeout(function() {
+            scrollTo(0, possibilitiesDiv)
+        }, 10);
+    })
+
+    $("#portfolioLink, #portfolioLinkMobile").click(function() {
+        setTimeout(function() {
+            scrollTo(0, portfolioDiv);
+        }, 10);
+    });
+
+    $("#aboutLink, #aboutLinkMobile").click(function() {
+        setTimeout(function() {
+            scrollTo(0, aboutDiv);
+        }, 10);
+    });
+
+    $("#contactLink, #contactLinkMobile").click(function() {
+        setTimeout(function() {
+            scrollTo(0, contactDiv);
+        }, 10);
+    });
 
     if($(window).scrollTop() > navChangeHeight && openNav.css('right') !== "0px") {
         $(".navbar").addClass("alternate-nav");
@@ -82,14 +122,7 @@ $(document).ready(function () {
         element.addEventListener("click", function() {
             setTimeout(function() {
                 $(".navbar").addClass("alternate-nav");
-            }, 2000)
+            }, 750)
         })
     }
-
-    $("#testLink").click(function() {
-        var testDiv = document.getElementById("services");
-        console.log(testDiv);
-        console.log(testDiv.offsetTop);
-        window.scrollTo(0, testDiv.offsetTop - 150);
-    });
 });
