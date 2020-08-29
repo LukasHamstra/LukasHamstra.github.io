@@ -13,6 +13,10 @@ $(document).ready(function () {
         return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
     }
 
+    $("#logo").click(function() {
+       scrollTo(0,0);
+    });
+
     $("#serviceLink, #serviceLinkMobile").click(function() {
         setTimeout(function () {
             scrollTo(0, serviceDiv);

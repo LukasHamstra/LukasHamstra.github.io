@@ -10,6 +10,7 @@
 
 #logo {
     width: 55%;
+    cursor: pointer;
 }
 
 .alternate-nav img {
