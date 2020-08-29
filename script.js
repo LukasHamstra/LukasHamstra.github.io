@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < coll.length; i++) {
         let element = coll[i];
-        element.addEventListener("click", function () {
+        element.addEventListener("click", function() {
             if(jQuery(element).hasClass('caret-open')) {
                 jQuery(element).removeClass('caret-open');
                 const content = element.nextElementSibling;
@@ -74,4 +74,22 @@ $(document).ready(function () {
             }
         });
     }
+
+    let mobileNavLinks = document.getElementsByClassName("mobileNavLink");
+
+    for (let i = 1; i < mobileNavLinks.length; i++) {
+        let element = mobileNavLinks[i];
+        element.addEventListener("click", function() {
+            setTimeout(function() {
+                $(".navbar").addClass("alternate-nav");
+            }, 2000)
+        })
+    }
+
+    $("#testLink").click(function() {
+        var testDiv = document.getElementById("services");
+        console.log(testDiv);
+        console.log(testDiv.offsetTop);
+        window.scrollTo(0, testDiv.offsetTop - 150);
+    });
 });
